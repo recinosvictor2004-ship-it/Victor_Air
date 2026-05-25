@@ -99,3 +99,24 @@ input {
     width: 160px;
   }
 }
+@media (min-width: 1024px) {
+  body {
+    background: linear-gradient(135deg, var(--jade), var(--sky));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+
+  .auth-container {
+    background: var(--white);
+    padding: 3rem 2.5rem;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    width: 420px;
+  }
+
+  .header {
+    display: none; /* El header desaparece en monitor */
+  }
+}
