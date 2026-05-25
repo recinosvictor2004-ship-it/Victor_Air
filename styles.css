@@ -120,3 +120,18 @@ input {
     display: none; /* El header desaparece en monitor */
   }
 }
+@media (min-width: 1440px) {
+  .auth-container {
+    width: 480px;
+    padding: 4rem 3rem;
+  }
+
+  input {
+    font-size: 1.1rem;
+  }
+
+  .btn-primary {
+    font-size: 1.1rem;
+    padding: 1rem;
+  }
+}
