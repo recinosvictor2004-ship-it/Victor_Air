@@ -85,3 +85,17 @@ input {
   flex-direction: column;
   gap: .5rem;
 }
+@media (min-width: 768px) {
+  .auth-container {
+    max-width: 500px;
+    margin: auto;
+  }
+
+  .header {
+    padding: 3rem 1rem;
+  }
+
+  .logo {
+    width: 160px;
+  }
+}
