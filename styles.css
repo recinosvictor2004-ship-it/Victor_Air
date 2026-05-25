@@ -3,7 +3,7 @@
 =========================== */
 :root {
   --jade: #00A86B;
-  --sky: #1E90FF;
+  --sky: #0E1628 ;
   --white: #FFFFFF;
   --gold: #D4AF37;
 
@@ -25,7 +25,7 @@ body {
 }
 
 .header {
-  background: linear-gradient(135deg, var(--jade), var(--sky));
+  background: var(--sky);
   padding: 2rem 1rem;
   text-align: center;
 }
