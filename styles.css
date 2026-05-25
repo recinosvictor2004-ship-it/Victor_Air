@@ -1,0 +1,87 @@
+/* ===========================
+   PALETA DE COLORES
+=========================== */
+:root {
+  --jade: #00A86B;
+  --sky: #1E90FF;
+  --white: #FFFFFF;
+  --gold: #D4AF37;
+
+  --text: #1F2933;
+  --muted: #6B7280;
+
+  --radius: 16px;
+  --shadow: 0 10px 25px rgba(0,0,0,0.12);
+}
+
+/* ===========================
+   ESTILOS BASE (MÓVIL)
+=========================== */
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: var(--white);
+  color: var(--text);
+}
+
+.header {
+  background: linear-gradient(135deg, var(--jade), var(--sky));
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.logo {
+  width: 140px;
+}
+
+.auth-container {
+  padding: 1.5rem;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: .3rem;
+}
+
+input {
+  padding: .8rem 1rem;
+  border-radius: 999px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+}
+
+.btn-primary {
+  background: var(--jade);
+  color: white;
+  padding: .9rem;
+  border-radius: 999px;
+  text-align: center;
+  font-weight: 600;
+  box-shadow: var(--shadow);
+}
+
+.links {
+  text-align: center;
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+}
