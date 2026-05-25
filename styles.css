@@ -3,7 +3,7 @@
 =========================== */
 :root {
   --jade: #00A86B;
-  --sky: #1E90FF;
+  --sky: #0E1628 ;
   --white: #FFFFFF;
   --gold: #D4AF37;
 
@@ -25,7 +25,7 @@ body {
 }
 
 .header {
-  background: linear-gradient(135deg, var(--jade), var(--sky));
+  background: var(--sky);
   padding: 2rem 1rem;
   text-align: center;
 }
@@ -84,4 +84,54 @@ input {
   display: flex;
   flex-direction: column;
   gap: .5rem;
+}
+@media (min-width: 768px) {
+  .auth-container {
+    max-width: 500px;
+    margin: auto;
+  }
+
+  .header {
+    padding: 3rem 1rem;
+  }
+
+  .logo {
+    width: 160px;
+  }
+}
+@media (min-width: 1024px) {
+  body {
+    background: linear-gradient(135deg, var(--jade), var(--sky));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+
+  .auth-container {
+    background: var(--white);
+    padding: 3rem 2.5rem;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    width: 420px;
+  }
+
+  .header {
+    display: none; /* El header desaparece en monitor */
+  }
+}
+@media (min-width: 1440px) {
+  .auth-container {
+    width: 480px;
+    padding: 4rem 3rem;
+  }
+
+  input {
+    font-size: 1.1rem;
+  }
+
+  .btn-primary {
+    font-size: 1.1rem;
+    padding: 1rem;
+  }
 }
